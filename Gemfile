@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 ##### 实体相关 #####
-gem 'mysql2', '~> 0.3.11'
+gem 'mysql2'
 # 用于保存配置型记录
 gem 'active_hash'
 ##### 控制器相关 #####
