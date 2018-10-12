@@ -1,4 +1,4 @@
-class CreateAdminLinkLists < ActiveRecord::Migration
+class CreateAdminLinkLists < ActiveRecord::Migration[5.2]
   def self.up
     create_table :admin_link_lists do |t|
       t.string :title
