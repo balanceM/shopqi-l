@@ -712,7 +712,7 @@
                     Cancel
         %script{ :type => "text/javascript" }
           var selectables = {"blog":[["introduction",892462],["News",890622]],"page":[["About Us",5082262],["Welcome",5082252]],"product":[["Advanced didactic hub",38663892],["Decentralized value-added array",38663862],["new product",38742692],["Public-key 6th generation synergy",38663852],["Re-engineered eco-centric policy",38663882],["Sharable fresh-thinking policy",38663872]],"collection":[["custom","3670472"],["Frontpage","3650022"]]};
-          document.observe( "dom:loaded", function() {
+          $(window).on(function(){
           
           var link_lists = $$('#menus li.links');
           var links = $A(link_lists);
@@ -724,7 +724,7 @@
           });
           });
           
-          Event.observe(document, 'dom:loaded', function(){
+          $(document).on('dom:loaded', function(){
           new HintField('linkform-hint');
           })
           
@@ -816,4 +816,5 @@
       </script>
       <![endif]
     %script{ :type => "text/javascript", :charset => "utf-8" }
+      var NREUMQ = []
       NREUMQ.push(["nrf2","beacon-1.newrelic.com","fa45dcf839",151,"dl8KQUReDl4AEE1zVVhZCg8MfQtcDhEhXV9BQgtZWlQQHQwMBldJ",4,139])
