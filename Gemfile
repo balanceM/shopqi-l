@@ -12,7 +12,7 @@ gem 'mysql2'
 # 用于保存配置型记录
 gem 'active_hash'
 ##### 控制器相关 #####
-gem 'decent_exposure'
+gem 'decent_exposure', '3.0.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
