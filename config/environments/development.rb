@@ -58,4 +58,16 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  ## config livereload
+  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+  # or, if you're using better_errors:
+  # config.middleware.insert_before Rack::Lock, Rack::LiveReload
+  # Specifying Rack::LiveReload options.
+  # config.middleware.use(Rack::LiveReload,
+  #   min_delay: 500,    # default 1000
+  #   max_delay: 10_000, # default 60_000
+  #   live_reload_port: 35729,  # default 35729
+  #   host: '192.168.26.130:3000',
+  #   ignore: [ %r{dont/modify\.html$} ]
+  # )
 end

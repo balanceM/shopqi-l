@@ -58,6 +58,10 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   #
   gem "rspec-rails"
+  # Applies CSS and JavaScript file changes without reloading a page
+  gem 'guard'
+  gem 'guard-livereload', '~> 2.5.2', require: false
+  gem "rack-livereload", group: :development
 end
 
 group :test do
